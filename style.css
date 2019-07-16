@@ -9,3 +9,9 @@ body {
 	margin: auto;
 	background: url("board.jpg") no-repeat;
 }
+
+form {
+	position: fixed;
+	top: 50px;
+	right: 50px;
+}
