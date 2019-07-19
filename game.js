@@ -6,9 +6,15 @@ let view = {
 		messageArea.innerHTML = msg;
 	},
 	displayMiss: function(location) {
-		//code
+		let cell = document.getElementById(location);
+		cell.setAttribute("class", "miss");
 	},
 	displayHit: function(location) {
-		//code
+		let cell = document.getElementById(location);
+		cell.setAttribute("class", "hit");
 	}
 };
+
+let ship1 = { locations: ["10", "20", "30"], hits: ["", "", ""] };
+let ship2 = { locations: ["32", "33", "34"], hits: ["", "", ""] };
+let ship3 = { locations: ["63", "64", "65"], hits: ["", "", "hit"] };
